@@ -1,8 +1,10 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 
   
 export default function Navbar() {
+  const router = useRouter();
   return (
     <div className="flex flex-row h-14 px-6 py-2 fixed top-0 w-full bg-white sm:bg-transparent">
         <div className="flex flex-row">
@@ -19,7 +21,7 @@ export default function Navbar() {
         <button className="flex items-center bg-primary-light text-sm rounded-lg p-4">
         Get Started
         </button>
-        <button className="flex items-center bg-white text-sm rounded-lg p-4">
+        <button onClick={()=>{router.push("/login")}} className="flex items-center bg-white text-sm rounded-lg p-4">
         Login
         </button>
       </div>
