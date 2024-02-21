@@ -15,9 +15,12 @@ export default function Navbar() {
         priority
       />
       </div>
-      <div className="flex flex-row-reverse w-full">
-        <button className="bg-yellow-400 rounded-lg p-2">
+      <div className="flex flex-row-reverse gap-x-2 w-full">
+        <button className="flex items-center bg-primary-light text-sm rounded-lg p-4">
         Get Started
+        </button>
+        <button className="flex items-center bg-white text-sm rounded-lg p-4">
+        Login
         </button>
       </div>
     </div>

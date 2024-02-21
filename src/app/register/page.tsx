@@ -8,7 +8,6 @@ import { GrApple } from "react-icons/gr";
 enum Options {
   EMAIL = "Email",
   MOBILE = "Mobile",
-  QRCODE = "QR Code",
 }
 export default function Login() {
   const [selected, setSelected] = useState<Options>(Options.EMAIL);
@@ -27,7 +26,7 @@ export default function Login() {
           />
         </div>
         <div className="w-full h-full bg-white min-h-[100vh] sm:min-h-0 mt-14 sm:w-[464px] space-y-8 p-8 rounded-lg">
-          <p className="text-2xl">Aurix Login</p>
+          <p className="text-2xl">Join Aurix</p>
           <br />
           <br />
           <Tabs selected={selected} setSelected={setSelected} />
@@ -38,7 +37,7 @@ export default function Login() {
           ) : (
             <QRForm handleSubmit={() => {}} />
           )}
-          <div className="flex flex-row justify-content-center items-center">
+           <div className="flex flex-row justify-content-center items-center">
             <hr className="h-[2px] w-7/12"></hr>
             <p className="text-xs px-6 text-gray-400">or</p>{" "}
             <hr className="h-[2px] w-7/12"></hr>
@@ -53,12 +52,12 @@ export default function Login() {
               Continue with Apple
             </button>
           </div>
-          <div className="flex [&_a]:text-primary-dark">
+          <div className="flex footer [&_a]:text-primary-dark">
             <a href={""} className="text-nowrap">
               Forgot Password?
             </a>
-            <div className="w-full flex flex-row-reverse">
-              <a href="/register" className="ml-4">Sign Up Now</a> Not an Aurix user yet?
+            <div className="w-full flex flex-row-reverse gap-x-2">
+              <a href="/login">Log In</a> Already a user?
             </div>
           </div>
         </div>
