@@ -103,7 +103,10 @@ export function MobileForm(props: FormProps) {
         <div className="flex flex-row">
           <select
             name="code"
-            className="max-w-[20%] px-2 bg-themeGray mr-4"
+            className={
+              "max-w-[20%] defo:text-blue-200 px-2 bg-themeGray mr-4 " +
+              (mobileForm.values.code === "" ? " text-themeGray-dark" : " ")
+            }
             onChange={mobileForm.handleChange}
             value={mobileForm.values.code}
           >

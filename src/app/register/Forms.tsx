@@ -52,7 +52,6 @@ export function EmailForm(props: FormProps) {
           <button
             disabled={emailForm.values.email === "" ? true : false}
             onClick={() => {
-              console.log("CLICKS");
             }}
             className="disabled:bg-themeGray bg-primary-light w-[30%] text-xs py-2 mr-4 rounded-md"
           >
