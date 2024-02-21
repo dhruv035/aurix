@@ -99,7 +99,7 @@ export function EmailForm(props: FormProps) {
           type="submit"
           className="mt-10 w-full bg-primary-light my-4 py-4 rounded-md text-sm"
         >
-          Login
+          Sign Up
         </button>
       </form>
     </div>
@@ -236,7 +236,7 @@ export function MobileForm(props: FormProps) {
           type="submit"
           className="mt-10 w-full bg-primary-light my-4 py-4 rounded-md text-sm"
         >
-          Login
+          Sign Up
         </button>
       </form>
     </div>
