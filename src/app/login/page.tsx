@@ -53,12 +53,13 @@ export default function Login() {
               Continue with Apple
             </button>
           </div>
-          <div className="flex [&_a]:text-primary-dark">
+          <div className="flex flex-col space-y-2 sm:space-y-0 sm:flex-row [&_a]:text-primary-dark">
             <a href={""} className="text-nowrap">
               Forgot Password?
             </a>
-            <div className="w-full flex flex-row-reverse">
-              <a href="/register" className="ml-4">Sign Up Now</a> Not an Aurix user yet?
+            <div className="w-fit sm:w-full flex flex-row-reverse">
+              <a href="/register" className="ml-4">Sign Up Now</a>
+               <p>Not an Aurix user yet?</p>
             </div>
           </div>
         </div>
